@@ -10,6 +10,7 @@ Created a Python Script to import some Azure SDK Libraries and execute code usin
 In Command Line Tool (Cmder, GitBash, Powershell, CloudShell, etc.)
 Create a Python Virtual Environment
 Activate our Virtual Env
+Upgrade pip in your Python Venv: py -m pip install --upgrade pip   # this is optional but good practice
 We installed the required dependencies using Pip and requirements.txt
 
 We executed our python code to interact with Azure via the SDK libraries
