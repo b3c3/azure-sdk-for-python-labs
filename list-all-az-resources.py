@@ -1,7 +1,7 @@
 # Import the needed credential and management objects from the libraries.
 from azure.identity import AzureCliCredential
 from azure.mgmt.resource import ResourceManagementClient
-#import os
+import os
 
 def get_resources_in_resource_group(resource_group_name : str, obj_resource_client : ResourceManagementClient):
     # Obtain the management object for resources.
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     credential = AzureCliCredential()
 
     # Retrieve subscription ID from environment variable.
-    subscription_id = 'e33f5ab3-ea71-474d-9d49-5b250ff2b8c4' #os.environ["AZURE_SUBSCRIPTION_ID"]
+    subscription_id = os.environ["AZURE_SUBSCRIPTION_ID"]
 
     # Obtain the management object for resources.
     resource_client = ResourceManagementClient(credential, subscription_id)
